@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de IMC:</h1>
+        </header>
+        <section class="input-section">
+            
+            <div class="input-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" step="0.1" required>
+            </div>
+            <button id="calcular">Calcular IMC</button>
+        </section>
+        <section id="resultado" class="resultado-section" style="display: none;">
+            <img id="resultadoImagem" src="resultado-icon.png" alt="Resultado Icon" class="icon">
+            <p id="resultadoTexto"></p>
+        </section>
+        <section id="erro" class="erro-section"></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+<meta name="google-adsense-account" content="ca-pub-1248007230918812">
+</html>
